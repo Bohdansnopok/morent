@@ -20,9 +20,21 @@ body {
 }
 
 h1, .h1 {
-  font-size: 48px;
+  font-size: 32px;
 }
 
 h2, .h2 {
   font-size: 32px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+a, Link {
+  text-decoration: none;
+  color: $gray;
+  cursor: pointer;
 }

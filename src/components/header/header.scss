@@ -1,0 +1,51 @@
+@use "../../app/globalStyles/variables.scss" as *;
+
+header {
+    .container {
+        color: $gray;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .logo {
+        color: $blue;
+    }
+
+    .header__form {
+        display: flex;
+        align-items: center;
+        margin-left: 64px;
+        display: block;
+        position: relative;
+
+        .header__form__input {
+            width: 500px;
+            border: $darkWhite 1px solid;
+            display: block;
+            padding: 12px 64px;
+            font-size: $smallSize;
+            border-radius: 70px;
+        }
+
+        .header__form__searchButton {
+            position: absolute;
+            top: 7px;
+            left: 20px;
+        }
+
+        .header__form__filterButton {
+            position: absolute;
+            top: 7px;
+            right: 20px;
+        }
+    }
+
+    .header__iconsLinks {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+}
