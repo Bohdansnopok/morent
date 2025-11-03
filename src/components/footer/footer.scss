@@ -1,0 +1,65 @@
+@use "../../app/globalStyles/variables.scss" as *;
+
+.footer {
+    background-color: $white;
+
+    .container {
+        padding: 80px 0 60px 0;
+    }
+
+    &__subtitle {
+        font-size: $mediumSize;
+        color: $gray;
+        margin-top: 16px;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 36px;
+
+        &__right {
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr;
+            gap: 75px;
+
+            &__column {
+                display: flex;
+                flex-direction: column;
+                gap: 35px;
+
+                &__title {
+                    font-weight: 700;
+                    margin-bottom: 15px;
+                }
+
+                &__link:hover {
+                    color: $black;
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        padding: 36px 0;
+        display: flex;                    font-weight: 600;
+
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid $gray;
+
+        &__links {
+            display: flex;
+            gap: 60px;
+
+            a {
+                color: $black;
+                font-weight: 700;
+            }
+
+            a:hover {
+                color: $gray;
+            }
+        }
+    }
+}

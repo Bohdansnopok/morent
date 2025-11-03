@@ -1,0 +1,32 @@
+@use "../../app/globalStyles/variables.scss" as *;
+
+.banner {
+    .container {
+        padding: 34px 0;
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+
+    &__card {
+        background: url(../../public/bannerBg.jpg) no-repeat;
+        padding: 24px 24px 10px 24px;
+        color: $white;
+        width: 100%;
+        border-radius: 10px;
+
+        &__subtitle {
+            margin-top: 16px;
+            margin-bottom: 20px;
+        }
+
+        &__car {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    &__card.arrowBg {
+        background: url(../../public/bannerBg2.jpg) no-repeat;
+    }
+}

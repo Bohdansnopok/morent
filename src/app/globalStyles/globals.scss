@@ -11,6 +11,7 @@ body {
   font-family: "Crimson Text", serif;
   color: $black;
   font-size: 20px;
+  background: $darkWhite;
 }
 
 .container {
@@ -19,11 +20,13 @@ body {
   width: 100%;
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: 32px;
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: 32px;
 }
 
@@ -33,8 +36,34 @@ button {
   background: none;
 }
 
-a, Link {
+a,
+Link {
   text-decoration: none;
   color: $gray;
   cursor: pointer;
+  transition: color 0.3s;
+  font-weight: 600;
+}
+
+.logo {
+  color: $blue;
+  text-transform: uppercase;
+}
+
+.button, .lightButton {
+  background-color: $blue;
+  padding: 10px 20px;
+  font-size: $mediumSize;
+  border-radius: 4px;
+  color: $white;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.lightButton {
+  background-color: $lightBlue;
+}
+
+.button:hover, .lightButton:hover {
+  background-color: $gray;
 }
