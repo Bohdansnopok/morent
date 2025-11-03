@@ -1,0 +1,60 @@
+@use "../../app/globalStyles/variables.scss" as *;
+
+.pickUp {
+    padding: 34px 0;
+
+    &__title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+
+
+        &__text {
+            margin-left: 8px;
+        }
+
+        &__decoration {
+            border-radius: 50%;
+            background-color: #3563e94d;
+            width: 16px;
+            height: 16px;
+            position: relative;
+            animation: pickUpDecorationAnimation 0.3s;
+        }
+
+        .pickUp__title__decoration.blueCircle {
+            background-color: $blue;
+            width: 8px;
+            height: 8px;
+            position: absolute;
+            top: 25%;
+            left: 25%;
+            animation: pickUpDecorationCircleAnimation 0.6s;
+        }
+    }
+
+    &__content {
+        padding: 26px 48px;
+        background-color: $white;
+        margin: 0 auto;
+        width: fit-content;
+
+        &__options {
+            display: flex;
+            align-items: center;
+            gap: 48px;
+
+            &__name {
+                font-weight: 700;
+                font-size: $mediumSize;
+                margin-bottom: 8px;
+            }
+
+            &__select {
+                background: none;
+                border: none;
+                font-size: $mediumSize;
+            }
+        }
+    }
+}

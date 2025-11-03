@@ -1,12 +1,36 @@
 $white: #ffffff;
-$black: #1A202C;
-$lightBlue: #54A6FF;
-$blue: #3563E9;
-$lightGray: #90A3BF;
-$gray: rgba(19, 19, 19, 0.6); 
+$black: #1a202c;
+$lightBlue: #54a6ff;
+$blue: #3563e9;
+$lightGray: #90a3bf;
+$gray: rgba(19, 19, 19, 0.6);
 $darkGray: #596780;
-$darkWhite: #F6F7F9;
+$darkWhite: #f6f7f9;
 
 $verySmallSize: 12px;
 $smallSize: 14px;
 $mediumSize: 16px;
+
+@keyframes pickUpDecorationAnimation {
+    from {
+        height: 0;
+        width: 0;
+    }
+
+    to {
+        height: 16px;
+        width: 16px;
+    }
+}
+
+@keyframes pickUpDecorationCircleAnimation {
+    from {
+        height: 0;
+        width: 0;
+    }
+
+    to {
+        height: 8px;
+        width: 8px;
+    }
+}
