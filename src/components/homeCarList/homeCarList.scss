@@ -1,0 +1,88 @@
+@use "../../app/globalStyles/variables.scss" as *;
+
+.list {
+    padding: 34px 0;
+
+    &__button {
+        margin: 0 auto;
+        display: block;
+    }
+
+    &__cards {
+        &__listCategory {
+            padding-bottom: 40px;
+
+            &__title {
+                color: $lightGray;
+                font-size: $mediumSize;
+                margin-bottom: 30px;
+            }
+
+            &__cards {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                gap: 32px;
+            }
+        }
+
+        &__card {
+            background-color: $white;
+            padding: 22px;
+            border-radius: 10px;
+
+            &__header {
+                display: flex;
+                align-items: start;
+                justify-content: space-between;
+                width: 100%;
+
+                &__name {
+                    font-weight: 700;
+                    margin-bottom: 4px;
+                }
+
+                &__category {
+                    color: $lightGray;
+                    font-weight: 700;
+                    font-size: $smallSize;
+                }
+            }
+
+            &__image {
+                display: block;
+                margin: 64px auto;
+            }
+
+            &__info {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 24px;
+                gap: 0;
+
+                &__item {
+                    display: flex;
+                    align-items: center;
+                    gap: 6px;
+                    color: $lightGray;
+                    font-size: $smallSize;
+                }
+            }
+
+            &__footer {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                &__price {
+                    font-weight: 700;
+
+                    span {
+                        font-size: $smallSize;
+                        color: $lightGray;
+                    }
+                }
+            }
+        }
+    }
+}
